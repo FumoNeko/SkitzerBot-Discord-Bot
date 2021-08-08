@@ -7,13 +7,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+intents = discord.Intents.default()
+intents.members = True
+client = discord.Client(intents=intents)
 
-client = discord.Client()
-
+# Startup event
 @client.event
 async def on_ready():
     print(f'{client.user.name} has connected to Discord!')
 
+# On member join event
 @client.event
 async def on_member_join(member):
     guild = client.get_guild(783515548192866345)
