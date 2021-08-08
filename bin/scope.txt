@@ -1,0 +1,11 @@
+The scope of this project is to create a discord bot. The discord bot should have the following features:
+automatically welcome users to the server on join
+
+
+
+pseudo code
+#join message: @Greeter Welcome @user to the server! map channels and their uses etc
+
+while true:
+  if eventJoin then
+  sendmsg("@Greeter Welcome @user to the server! Make sure to read the #rules") #etc
