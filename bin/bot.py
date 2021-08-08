@@ -3,9 +3,7 @@
 import os
 
 import discord
-from dotenv import load_dotenv
 
-load_dotenv()
 TOKEN = "INSERT YOUR TOKEN HERE"
 intents = discord.Intents.default()
 intents.members = True
